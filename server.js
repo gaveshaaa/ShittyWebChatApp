@@ -30,7 +30,7 @@ io.on('connection', (socket) => {
         io.emit('token-sfl', token);
     });
     socket.on('chat-msg-event', message => {
-        history.push(`${users[socket.id]} - ${message} \n`);
+        history.push(`${users[socket.id]} - ${message}` + "\n");
         io.emit('chat-msg-event', {message: message, sent: users[socket.id]});
     });
     socket.on('disconnect', () => {
