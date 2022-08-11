@@ -1,1 +1,1 @@
-#"its a learning curbe bro"
+# "its a learning curve bro"
